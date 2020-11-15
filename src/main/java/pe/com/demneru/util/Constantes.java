@@ -1,0 +1,1 @@
+package pe.com.demneru.util;import org.springframework.context.ApplicationContext;public class Constantes{  public static final ApplicationContext CONFIG_PATH = null;}

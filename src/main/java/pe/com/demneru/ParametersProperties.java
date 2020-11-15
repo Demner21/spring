@@ -1,10 +1,12 @@
-package pe.com.claro.sh.procesatareaprog.util.properties;
+package pe.com.demneru;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class ParametersProperties{
   
-  private static Logger                  log        = Logger.getLogger( ParametersProperties.class.getName() );
+  private static final Logger log = LoggerFactory.getLogger(ParametersProperties.class);  
+  
   private static ParametersConfiguration propConfig = null;
   
   public void cargarPropiedades(){

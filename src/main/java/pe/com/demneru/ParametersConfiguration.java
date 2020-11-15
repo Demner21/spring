@@ -1,20 +1,17 @@
-package pe.com.claro.sh.procesatareaprog.util.properties;
+package pe.com.demneru;
 
 import java.io.FileInputStream;
 import java.io.InputStream;
-
 import java.util.Properties;
-
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class ParametersConfiguration {
     
     static private Properties properties = null;
     static private InputStream is = null;
     static private ParametersConfiguration pp = null;
-    private static Logger logger =
-        Logger.getLogger(ParametersConfiguration.class.getName());
-    
+    private static final Logger logger = LoggerFactory.getLogger(ParametersConfiguration.class);
     static public ParametersConfiguration getSingleton(String prop) {
         if (pp == null) {
             try {
