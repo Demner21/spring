@@ -9,12 +9,11 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
 @SpringBootApplication
 @ComponentScan( { "pe.com.demneru" } )
-//@PropertySource( "classpath:src/main/resources/demo.properties" )
+@PropertySource( "classpath:application.properties" )
 public class AppConfig{
   
-  // al poner file:Test_SH_ProcesaTareaProg.properties, se indica que el archivo Test_SH_ProcesaTareaProg.properties se
-  // encuentra en
-  // la raiz del proyecto
+  // al poner file:application.properties, se indica que el archivo application.properties se
+  // encuentra en la raiz del proyecto
   // si se pone classpath: el archivo debe ubicarse en la carpeta src/main/resources
   
   @Bean
